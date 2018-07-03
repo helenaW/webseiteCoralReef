@@ -1,0 +1,189 @@
+
+    <!-- CGVR Header -->
+    <div id="header">
+        <div>
+            <img id="cgvr" src="img/cgvr.png">
+            <img id="uni" src="img/uni-bremen.png">
+        </div>
+        <div id="breadcrumbs">
+            <ul>
+                <li><a href="http://www.uni-bremen.de">Universität Bremen</a></li>
+                <li><a href="http://www.informatik.uni-bremen.de">Informatik</a></li>
+                <li><a href="/index.shtml">Computer Graphic</a></li>
+                <li><a href="../../../teaching.shtml">Teaching</a></li>
+                <li class="selected"><b>VR CoralReef</b></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MENU-->  
+    <div id="headbox">
+      <!-- vertical menu -->
+     <div id="menu">
+        <ul>
+            <li class="selected"><a href="javascript:void(0)">Introduction</a></li>
+            <li><a href="./sites/motivation.shtml">Motivation</a></li>
+            <li><a href="./sites/documentation.shtml">Documentation</a></li>   
+            <li><a href="./sites/media.shtml">Media</a></li>     
+            <li><a href="./sites/models.shtml">Models</a></li>
+            <li><a href="./sites/team.shtml">Team</a></li>
+        </ul>
+     </div>
+
+      <div id="logo">
+          <img src="./img/LogoAnimated_small2.gif" alt="VR CORAL REEF" draggable="false">
+      </div>
+    </div>  
+
+    <!-- HORIZONTAL MENU-->
+    <!--div id="menu">
+        <ul>
+            <li class="selected"><a href="javascript:void(0)">Introduction</a></li>
+            <li><a href="./sites/motivation.shtml">Motivation</a></li>
+            <li><a href="./sites/documents.shtml">Documents</a></li>   
+            <li><a href="./sites/media.shtml">Media</a></li>     
+            <li><a href="./sites/models.shtml">Models</a></li>
+            <li><a href="./sites/team.shtml">Team</a></li>
+        </ul>
+     </div-->
+
+    <!-- CONTENT -->
+    <div id="content">
+          <div class="content__wrapper">
+          
+                <h1>An interactive VR simulation: life of an endangered coral reef</h1>
+                
+                <p>
+                    The master's project "VR CoralReef" creates a Virtual Reality environment in a coral reef in the Indo-Pacific region, based on scientific work of the <a href="http://www.zmt-bremen.de/">ZMT</a> (Leibniz Centre for Tropical Marine Research). 
+                </p>
+                <p>
+                    Users are able dive into the simulation using a Head Mounted Display (HMD) allowing them to expierience the Reef first-hand and intuitively. The environment achieves even more immersion due to a realistic display of domestic wildlife. The goal of "VR CoralReef" is to draw attention to the acute threat coral reefs of our earth are facing, by simulating growth and perish of a virtual reef depending on shifting environmental parameters.
+                </p>
+                <p>
+                    "VR CoralReef" is developed in cooperation with <a href="http://www.zmt-bremen.de/">ZMT</a> and <a href="http://cgvr.informatik.uni-bremen.de/">AG CGVR</a> of University of Bremen, Germany.
+                </p>
+                <br>
+
+
+                <div class="w3-content">
+                  <img class="mySlides" src="img/media/screenReef4.png" style="width: 100%; display: block;" draggable="false">
+                  <img class="mySlides" src="img/media/screenSwarm5.png" style="width: 100%; display: none;" draggable="false">
+                  <img class="mySlides" src="img/media/screenCoral.png" style="width: 100%; display: none;" draggable="false">
+                  <img class="mySlides" src="img/media/screenFlash3.png" style="width: 100%; display: none;" draggable="false">
+                  <img class="mySlides" src="img/media/screenCoral2.png" style="width: 100%; display: none;" draggable="false">
+                  <img class="mySlides" src="img/media/screenDayNight.png" style="width: 100%; display: none;" draggable="false">
+
+                  <div class="w3-row-padding w3-section">
+                    <div class="w3-col s2">
+                      <img class="demo w3-opacity w3-hover-opacity-off w3-opacity-off" src="img/thumbnails/screenReef4t.png" style="width:100%" onclick="currentDiv(1)" draggable="false">
+                    </div>
+                    <div class="w3-col s2">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="img/thumbnails/screenSwarm5t.png" style="width:100%" onclick="currentDiv(2)" draggable="false">
+                    </div>
+                    <div class="w3-col s2">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="img/thumbnails/screenCoralt.png" style="width:100%" onclick="currentDiv(3)" draggable="false">
+                    </div>
+                    <div class="w3-col s2">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="img/thumbnails/screenFlash3t.png" style="width:100%" onclick="currentDiv(4)" draggable="false">
+                    </div>
+                    <div class="w3-col s2">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="img/thumbnails/screenCoral2t.png" style="width:100%" onclick="currentDiv(5)" draggable="false">
+                    </div>
+                    <div class="w3-col s2">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="img/thumbnails/screenDayNightt.png" style="width:100%" onclick="currentDiv(6)" draggable="false">
+                    </div>
+                  </div>
+                </div>
+
+                <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                  showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("demo");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                  }
+                  x[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " w3-opacity-off";
+                }
+                </script>
+            </div>
+
+            
+    </div>
+
+    <div id="features">
+      <div>
+          <div class="container1">
+            <img class="ftimg" src="img/main/f1.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">An immersive lifelike coral reef</p></div>
+          </div>
+          <div class="container2">
+            <img class="ftimg" src="img/main/f2.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Experience in Virutal Reality or on your desktop screen</p></div>
+          </div>
+          <div class="container1">
+            <img class="ftimg" src="img/main/f8.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Algorithmic birth, growth and decease of corals based on scientific data</p></div>
+          </div>
+          <div class="container2">
+            <img class="ftimg" src="img/main/f3.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">7 different kinds of corals, 10 different kinds of animals and over 20 other handmade models</p></div>
+          </div>
+          <div class="container1">
+            <img class="ftimg" src="img/main/f9.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Corals react on parametrical changes such as change in temperature</p></div>
+          </div>
+          <div class="container2">
+            <img class="ftimg" src="img/main/f7.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Algorithmic swarm behaviour of animals</p></div>
+          </div>
+          <div class="container1">
+            <img class="ftimg" src="img/main/f91.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Exploration at night with VR-flashlight</p></div>
+          </div>
+          <div class="container2">
+            <img class="ftimg" src="img/main/f93.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Feature-rich ingame menu (manipulate parameters, toggle modes)</p></div>
+          </div>
+          <div class="container1">
+            <img class="ftimg" src="img/main/f4.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Realistic interaction: Sharks hunt fish, fish nibble on corals and more</p></div>
+          </div>
+          <div class="container2">
+            <img class="ftimg" src="img/main/f5.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Godrays, caustics, day and night cycle</p></div>
+          </div>
+          <div class="container1">
+            <img class="ftimg" src="img/main/f6.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Handmade ambient noise</p></div>
+          </div> 
+          <div class="container2">
+            <img class="ftimg" src="img/main/f92.png" draggable="false">
+            <div class="center"><p style="font-size: 1.5vw;">Intiutive movement with VR-Controller or Keyboard</p></div>
+          </div>
+          
+      </div>
+  </div>
+  
+  <div id="footer">
+  © 2012 AG CGVR Uni-Bremen            <a href="http://www.uni-bremen.de/en/data-privacy.html">Data Privacy</a>
+</div>
+
+

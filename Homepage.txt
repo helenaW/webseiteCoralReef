@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+</head>
+
+<body>
+	<!--CGVR Header-->
+	<div id="header">
+        <div>
+            <img id="cgvr" src="img/cgvr.png">
+            <img id="uni" src="img/uni-bremen.png">
+        </div>
+        <div id="breadcrumbs">
+            <ul>
+                <li><a href="http://www.uni-bremen.de">Universität Bremen</a></li>
+                <li><a href="http://www.informatik.uni-bremen.de">Informatik</a></li>
+                <li><a href="/index.shtml">Computer Graphic</a></li>
+                <li><a href="../../../teaching.shtml">Teaching</a></li>
+                <li class="selected"><b>VR CoralReef</b></li>
+            </ul>
+        </div>
+    </div>
+	
+	<!-- MENU-->  
+    <div id="headbox">
+      <!-- vertical menu -->
+     <div id="menu">
+        <ul>
+            <li class="selected"><a href="javascript:void(0)">Introduction</a></li>
+            <li><a href="./sites/motivation.shtml">Motivation</a></li>
+            <li><a href="./sites/documentation.shtml">Documentation</a></li>   
+            <li><a href="./sites/media.shtml">Media</a></li>     
+            <li><a href="./sites/team.shtml">Team</a></li>
+        </ul>
+     </div>
+
+      <div id="logo">
+          <img src="logo_multiplayer.png" alt="VR CORAL REEF" draggable="false">
+      </div>
+    </div>
+		
+	<!--Content-->
+</body>
