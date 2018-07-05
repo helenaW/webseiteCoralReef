@@ -5,3 +5,5 @@ Desktop_Screenshot_2018.07.03_-_04.37.11.42.png filter=lfs diff=lfs merge=lfs -t
 Desktop_Screenshot_2018.07.03_-_04.38.31.11.png filter=lfs diff=lfs merge=lfs -text
 Desktop_Screenshot_2018.07.03_-_04.34.18.02.png filter=lfs diff=lfs merge=lfs -text
 Desktop_Screenshot_2018.07.03_-_04.34.35.59.png filter=lfs diff=lfs merge=lfs -text
+*.MTS filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
